@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hockey club</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+  </head>
+  <body>
+    <header class="container mx-auto">
+      <!-- navbar section-->
+      <nav class="navbar">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost pl-0 pr-2 lg:hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-slate-900"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-white text-base"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Contact</a></li>
+              <li><a>Blog</a></li>
+            </ul>
+          </div>
+          <a
+            class="btn btn-ghost pl-0 text-2xl lg:text-4xl text-slate-900 font-extrabold"
+            >Hockey<span class="text-rose-600">’</span>s</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-slate-600 text-base">
+            <li class="text-rose-600"><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Contact</a></li>
+            <li><a>Blog</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <input type="checkbox" id="search-toggle" class="hidden" />
+          <label for="search-toggle" class="relative">
+            <input
+              type="text"
+              id="search-input"
+              class="search-input px-3 py-2 rounded-lg outline-none bg-slate-100 mr-3 text-black"
+              placeholder="Search"
+            />
+            
+          </label>
+          <button
+            class="custom-btn text-sm lg:text-xl bg-red-500 p-2 text-white rounded"
+          >
+            Get Ticket
+          </button>
+        </div>
+      </nav>
+      <!-- nav end -->
+      
+      <!-- banner  -->
+      <section class="mt-12 md:relative lg:relative">
+        <div class="carousel mb-4 md:mb-0 lg:mb-0 w-full h-auto md:h-[550px]">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./img/1.png" class="w-full" />
+            <div
+              class="absolute flex gap-4 justify-center md:justify-normal lg:justify-normal transform -translate-y-1/2 left-5 right-5 top-3/4 lg:top-[90%]"
+            >
+              <a href="#slide3" class="btn btn-circle bg-black text-stone-50"
+                >❮</a
+              >
+              <a href="#slide2" class="btn btn-circle bg-black text-stone-50"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./img/2.png" class="w-full" />
+            <div
+              class="absolute flex justify-center md:justify-normal lg:justify-normal gap-4 transform -translate-y-1/2 left-5 right-5 top-3/4 lg:top-[90%]"
+            >
+              <a href="#slide1" class="btn btn-circle bg-black text-stone-50"
+                >❮</a
+              >
+              <a href="#slide3" class="btn btn-circle bg-black text-stone-50"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="./img/3.png" class="w-full" />
+            <div
+              class="absolute flex justify-center md:justify-normal lg:justify-normal gap-4 transform -translate-y-1/2 left-5 right-5 top-3/4 lg:top-[90%]"
+            >
+              <a href="#slide2" class="btn btn-circle bg-black text-stone-50"
+                >❮</a
+              >
+              <a href="#slide1" class="btn btn-circle bg-black text-stone-50"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-black p-4 md:p-6 lg:p-8 md:right-0 lg:right-0 md:bottom-0 lg:bottom-0 md:mb-8 lg:mb-8 md:mr-8 lg:mr-8 md:w-[42.91%] lg:w-[42.91%] rounded-2xl md:absolute lg:absolute"
+        >
+          <h4
+            class="font-extrabold text-white text-lg md:text-lg lg:text-2xl mb-2 lg:mb-4"
+          >
+            Meeting Heroes: Exploring Fields of Heroism
+          </h4>
+          <p class="font-medium text-gray-400">
+            Celebrate the courage and selflessness of individuals making a
+            difference in healthcare, social justice, and beyond, as we honor
+            their contributions to a better world.
+          </p>
+        </div>
+      </section>
+    </header>
+  </body>
+</html>
